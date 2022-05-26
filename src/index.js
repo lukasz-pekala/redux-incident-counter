@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom';
 
 import Application from './Application';
 
-import './index.scss';
+import './index.css';
+
+import store from './storeWithEnhancer';
+
+store.dispatch({ type: 'Hello' });
 
 ReactDOM.render(
   <React.StrictMode>
