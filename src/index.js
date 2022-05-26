@@ -7,7 +7,11 @@ import './index.css';
 
 import store from './storeWithEnhancer';
 
+import perfStore from './performanceMiddleware';
+
 store.dispatch({ type: 'Hello' });
+
+perfStore.dispatch({ type: 'Hello' });
 
 ReactDOM.render(
   <React.StrictMode>
